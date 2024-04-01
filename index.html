@@ -1,0 +1,222 @@
+<html>
+<head>
+        <title>RecRoom Studios</title>
+        <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <header class="header">
+        <logo>
+            <img class="logo" src="logo&icon/Logo.png" height="50" alt="Logo"/>
+            <h1 class="logoText">Photo & Video</h1>
+            <br>
+        </logo>
+        <nav class="navBar">
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <div class="dropdown">
+                <li><a href="portfolio.html">Portfolio ▾</a>
+                    <div class="content">
+                        <a href="portfolio/portrait.html">Portrait Photography</a>
+                        <a href="portfolio/event.html">Event Photography</a>
+                        <a href="portfolio/street.html">Street Photography</a>
+                    </div>
+                </li>
+                </div>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+     </header>
+        <article class="carousel">
+        
+            <div class="slideshow-container">
+    
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="carousel/img1.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="carousel/img2.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="carousel/img3.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+    
+              <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+                
+         </article>
+    
+         <article class="article2">
+            <div class="title-item-1">
+                "Where your vision turns to reality."
+            </div>
+            <div class="paragraph1">
+            Welcome to RecRoom Studios, your place for great Photography and Videography. We make your vision a stunning reality with passion and creative flair. Whether it's capturing memories or boosting your brand, we'll turn your ideas into incredible visuals.
+            </div>
+            <div class="button-container">
+    
+                  <a class="button" href="contact.html">Get in touch today!</a>
+         </article>
+    
+         <article class="photogrid">
+            <!-- Photo Grid -->
+                <div class="row"> 
+                <div class="column">
+                <img src="photogrid/img (1).jpg" style="width:100%">
+                <img src="photogrid/img (2).jpg" style="width:100%">
+                <img src="photogrid/img (3).jpg" style="width:100%">
+                <img src="photogrid/img (4).jpg" style="width:100%">
+                <img src="photogrid/img (5).jpg" style="width:100%">
+                <img src="photogrid/img (6).jpg" style="width:100%">
+                </div>
+                <div class="column">
+                <img src="photogrid/img (8).jpg" style="width:100%">
+                <img src="photogrid/img (9).jpg" style="width:100%">
+                <img src="photogrid/img (10).jpg" style="width:100%">
+                <img src="photogrid/img (11).jpg" style="width:100%">
+                <img src="photogrid/img (12).jpg" style="width:100%">
+                <img src="photogrid/img (13).jpg" style="width:100%">
+                </div>  
+                <div class="column">
+                <img src="photogrid/img (14).jpg" style="width:100%">
+                <img src="photogrid/img (15).jpg" style="width:100%">
+                <img src="photogrid/img (16).jpg" style="width:100%">
+                <img src="photogrid/img (17).jpg" style="width:100%">
+                <img src="photogrid/img (18).jpg" style="width:100%">
+                <img src="photogrid/img (19).jpg" style="width:100%">
+                </div>
+                <div class="column">
+                <img src="photogrid/img (21).jpg" style="width:100%">
+                <img src="photogrid/img (22).jpg" style="width:100%">
+                <img src="photogrid/img (23).jpg" style="width:100%">
+                <img src="photogrid/img (24).jpg" style="width:100%">
+                <img src="photogrid/img (25).jpg" style="width:100%">
+                <img src="photogrid/img (26).jpg" style="width:100%">
+                </div>
+                </div>
+    
+         </article>
+     <footer>
+        <div class="container">
+            <div class="item-one">
+                <div class="title-item-2">
+                    Follow us on social media!
+                </div>
+                <div class="imgcontainer">
+                    <img src="logo&icon/FBlogo.png" href="#" alt="Facebook Logo" class="item-one-logo">
+                    <img src="logo&icon/INSTAlogo.png" href="#" alt="Instagram Logo" class="item-one-logo">
+                    <img src="logo&icon/PINlogo.png" href="#" alt="Pinterest Logo" class="item-one-logo">
+                    <img src="logo&icon/TTlogo.png" href="#" alt="TicTok Logo" class="item-one-logo">
+                </div>
+                <p class="copyright">
+                    Copyright © 2012-2023 • All rights reserved • RecRoom Studios
+                    <br><br>
+                    Artwork is the sole property of  RecRoom Studios and is held under 
+                    copyright. The contents of this website <br>may not be copied, collected, or 
+                    used for personal or professional gain without permission from 
+                    RecRoom Studios.
+                </p>
+            </div>
+            <div class="item-second">
+                <div class="item-two-container">
+                    <div class="contact">
+                        <div class="contact-head">
+                            CONTACT
+                        </div>
+                        <div class="data-container">
+                            <img src="logo&icon/NOicon.png" class="data-icon">
+                            <div class="data-info">
+                                09064125313
+                            </div>
+                        </div>
+                        <div class="data-container">
+                            <img src="logo&icon/GMicon.png" class="data-icon">
+                            <div class="data-info">
+                                recrooom.studio.libon@gmail.com
+                            </div>
+                        </div>
+                        <div class="data-container">
+                            <img src="logo&icon/LOCicon.png" class="data-icon">
+                            <div class="data-info">
+                                Libon,Albay
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="navigate">
+                        <div class="navigate-head">
+                            NAVIGATE
+                        </div>
+                        <div class="navi-container">
+                            <div class="data-info">
+                                <a href="index.html">Home</a>
+                            </div>
+                        </div>
+                        <div class="navi-container">
+                            <div class="data-info">
+                                <a href="portfolio.html">Portfolio</a>
+                            </div>
+                        </div>
+                        <div class="navi-container">
+                            <div class="data-info">
+                                <a href="about.html">About</a>
+                            </div>
+                        </div>
+                        <div class="navi-container">
+                            <div class="data-info">
+                                <a href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+</body>
+</html> 
